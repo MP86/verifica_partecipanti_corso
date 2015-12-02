@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('title')
-{{$partecipant->name, surname}}
+{{$partecipant->surname}}
 
 @stop
 
@@ -15,6 +15,6 @@
 <ul>
 	<li>{{$partecipant->id}}</li>
 	<li>{{$partecipant->email}}</li>
-	<li>{{$partecipant->number}}</li>
+	<li>{{$partecipant->phone_number}}</li>
 </ul>
 @stop

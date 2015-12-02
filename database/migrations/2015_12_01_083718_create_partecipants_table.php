@@ -17,7 +17,6 @@ class CreatePartecipantsTable extends Migration
         	$table->string('name');
         	$table->string('surname');
         	$table->string('email');
-        	//$table->default(+39);
         	$table->string('phone_number');
         	$table->timestamps();
         });

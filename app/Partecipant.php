@@ -11,14 +11,13 @@ class Partecipant extends Model
 	 *
 	 * @var string
 	 */
-	protected $table = 'partecipants';
 
 	/**
 	 * The attributes that are mass assignable.
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'surname', 'email', 'phone number'];
+	protected $fillable = ['name', 'surname', 'email', 'phone_number'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.

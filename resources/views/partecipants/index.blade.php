@@ -20,7 +20,7 @@ Lista partecipanti
 			<ul>
 				<li>{{$partecipant->id}}</li>
 				<li>{{$partecipant->email}}</li>
-				<li>{{$partecipant->number}}</li>
+				<li>{{$partecipant->phone_number}}</li>
 			</ul>
 		</div>
 	@endforeach

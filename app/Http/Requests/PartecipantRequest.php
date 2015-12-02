@@ -27,7 +27,7 @@ class PartecipantRequest extends Request
         		'name' => ['required', 'min:3'],
         		'surname' => ['required','min:4'],
         		'email' => ['required', 'email'],
-        		'phone number' => ['required', 'number'],
+        		'phone_number' => ['required', 'min:5'],
         ];
     }
 }

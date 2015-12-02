@@ -8,6 +8,7 @@ use App\Partecipant;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\PartecipantRequest;
+use Illuminate\Http\JsonResponse;
 
 class PartecipantsController extends Controller
 {
@@ -48,7 +49,7 @@ class PartecipantsController extends Controller
     			'name' => $input['name'],
     			'surname'=>$input['surname'],
     			'email' => $input['email'],
-    			'phone number'=>$input['phone number'],
+    			'phone_number'=>$input['phone_number'],
     	]);
     	
     	if ($request->ajax() || $request->wantsJson()) {
@@ -96,7 +97,7 @@ class PartecipantsController extends Controller
     			'name' => $input['name'],
     			'surname'=>$input['surname'],
     			'email' => $input['email'],
-    			'phone number'=>$input['phone number'],
+    			'phone_number'=>$input['phone_number'],
     			
     	]);
     	

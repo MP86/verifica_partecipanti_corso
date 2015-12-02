@@ -13,8 +13,16 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-
+        
+		//cancella prima i partecipanti
+        DB::table('partecipants')->delete();
+        
+       
+        
         // $this->call(UserTableSeeder::class);
+        
+        //aggiungi partecipanti
+        $this->call(PartecipantsSeeder::class);
 
         Model::reguard();
     }
